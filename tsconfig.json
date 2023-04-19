@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2015",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": ["esnext", "DOM", "DOM.Iterable"],
     "baseUrl": ".",
     "moduleResolution": "node",
     "esModuleInterop": true,

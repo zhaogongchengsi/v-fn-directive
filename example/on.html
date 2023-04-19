@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="btn">点击 String</button>
+    <button class="removeBtn">点击 Element</button>
+    <script src="../dist/index.js"></script>
+    <script>
+      const cl1 = () => {
+        console.log("click Btn!");
+      };
+      v.on(".btn", "click", cl1);
+
+      v.on(document.querySelector(".removeBtn"), "click", () => {
+		console.log("remove Event")
+        v.off(".btn", "click", cl1);
+      });
+    </script>
+  </body>
+</html>

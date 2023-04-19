@@ -4,6 +4,7 @@ const commonjs = require("@rollup/plugin-commonjs");
 const atransformRuntime = require("@babel/plugin-transform-runtime");
 const resolve = require("@rollup/plugin-node-resolve");
 const replace = require("@rollup/plugin-replace");
+
 module.exports = {
   input: "src/index.ts",
   output: {
