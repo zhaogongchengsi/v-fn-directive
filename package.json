@@ -53,6 +53,7 @@
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-replace": "^5.0.2",
+    "@types/lodash": "^4.14.194",
     "@types/node": "^18.11.19",
     "@vitest/browser": "^0.30.1",
     "bumpp": "^8.2.1",
@@ -68,6 +69,7 @@
     "webdriverio": "^8.8.4"
   },
   "dependencies": {
-    "@vue/reactivity": "^3.2.47"
+    "@vue/reactivity": "^3.2.47",
+    "lodash": "^4.17.21"
   }
 }

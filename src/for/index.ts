@@ -1,19 +1,18 @@
-import {type Ref, isProxy, unref, effect} from "@vue/reactivity";
-import {
-    Oel,
-    isArray,
-    isHtmlElement,
-    querySelector,
-    isObject,
-    isNumber
-} from "../utils";
+import {type Ref, isProxy} from "@vue/reactivity";
+import {Oel, isHtmlElement, querySelector} from "../utils";
+
+import isNumber from 'lodash/isNumber'
+import isObject from 'lodash/isObject'
+import isArray from 'lodash/isArray'
 
 export type EnumerableItem = Array < any > | Object | number
 export type ForItem = Ref | number | string;
 export type EnumerableValue = Array < ForItem > | Set < ForItem > | number;
 export type EnumerableValueRef = Ref < EnumerableValue > | number
 
-export function vfor(fer : EnumerableValueRef, els : Oel) {
+export type VForOptions = {}
+
+export function vfor(fer : EnumerableValueRef, els : Oel, option : VForOptions) {
 
     const el = querySelector(els)
     const pel = el ?. parentNode
@@ -32,16 +31,14 @@ export function vfor(fer : EnumerableValueRef, els : Oel) {
 
         // 是一个普通数组
         if (isNumber(_val)) {
-            for (let index = 0; index <= (_val as number); index++) {
-				// 渲染数字
-			}
+            for (let index = 0; index <= (_val as number); index++) { // 渲染数字
+            }
         }
 
         // 渲染是一个数组
         if (isArray(_val)) {
-            for (const iterator of _val as Array < any >) {
-				// 渲染数组
-			}
+            for (const iterator of _val as Array < any >) { // 渲染数组
+            }
         }
         // 渲染是一个对象
         if (isObject(_val)) {
@@ -56,5 +53,4 @@ export function vfor(fer : EnumerableValueRef, els : Oel) {
 
 }
 
-function CreateNormalElements() {}
 function CreateRefElement() {}

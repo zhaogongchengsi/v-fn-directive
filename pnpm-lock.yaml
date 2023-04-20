@@ -7,6 +7,9 @@ importers:
       '@vue/reactivity':
         specifier: ^3.2.47
         version: registry.npmmirror.com/@vue/reactivity@3.2.47
+      lodash:
+        specifier: ^4.17.21
+        version: registry.npmmirror.com/lodash@4.17.21
     devDependencies:
       '@babel/plugin-transform-runtime':
         specifier: ^7.21.4
@@ -26,6 +29,9 @@ importers:
       '@rollup/plugin-replace':
         specifier: ^5.0.2
         version: registry.npmmirror.com/@rollup/plugin-replace@5.0.2(rollup@3.20.6)
+      '@types/lodash':
+        specifier: ^4.14.194
+        version: registry.npmmirror.com/@types/lodash@4.14.194
       '@types/node':
         specifier: ^18.11.19
         version: registry.npmmirror.com/@types/node@18.11.19
@@ -1298,6 +1304,12 @@ packages:
     resolution: {integrity: sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.1.tgz}
     name: '@types/http-cache-semantics'
     version: 4.0.1
+    dev: true
+
+  registry.npmmirror.com/@types/lodash@4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.194.tgz}
+    name: '@types/lodash'
+    version: 4.14.194
     dev: true
 
   registry.npmmirror.com/@types/node@18.11.19:
@@ -4002,7 +4014,6 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
 
   registry.npmmirror.com/loglevel-plugin-prefix@0.8.4:
     resolution: {integrity: sha512-WpG9CcFAOjz/FtNht+QJeGpvVl/cdR6P0z6OcXSkr8wFJOsV2GRj2j10JLfjuA4aYkcKCNIEqRGCyTife9R8/g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loglevel-plugin-prefix/-/loglevel-plugin-prefix-0.8.4.tgz}
