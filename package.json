@@ -2,8 +2,8 @@
   "name": "v-fn-directive",
   "version": "0.0.0",
   "description": "This is your project description.",
-  "unpkg": "dist/index.js",
-  "jsdelivr": "dist/index.js",
+  "unpkg": "dist/index.global.js",
+  "jsdelivr": "dist/index.global.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c --watch",
@@ -18,12 +18,12 @@
   "author": "zhaogongchengsi <zzhhaon@163.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/zhaogongchengsi",
-  "homepage": "https://github.com/zhaogongchengsi/pkg-name#readme",
+  "homepage": "https://github.com/zhaogongchengsi/v-fn-directive#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhaogongchengsi/pkg-name.git"
+    "url": "git+https://github.com/zhaogongchengsi/v-fn-directive.git"
   },
-  "bugs": "https://github.com/zhaogongchengsi/pkg-name/issues",
+  "bugs": "https://github.com/zhaogongchengsi/v-fn-directive/issues",
   "sideEffects": false,
   "exports": {
     ".": {
