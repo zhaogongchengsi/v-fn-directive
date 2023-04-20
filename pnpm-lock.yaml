@@ -3,6 +3,10 @@ lockfileVersion: '6.0'
 importers:
 
   .:
+    dependencies:
+      '@vue/reactivity':
+        specifier: ^3.2.47
+        version: registry.npmmirror.com/@vue/reactivity@3.2.47
     devDependencies:
       '@babel/plugin-transform-runtime':
         specifier: ^7.21.4
@@ -28,9 +32,6 @@ importers:
       '@vitest/browser':
         specifier: ^0.30.1
         version: registry.npmmirror.com/@vitest/browser@0.30.1(vitest@0.30.1)
-      '@vue/reactivity':
-        specifier: ^3.2.47
-        version: registry.npmmirror.com/@vue/reactivity@3.2.47
       bumpp:
         specifier: ^8.2.1
         version: registry.npmmirror.com/bumpp@8.2.1
@@ -1409,13 +1410,13 @@ packages:
     version: 3.2.47
     dependencies:
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.2.47
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@vue/shared@3.2.47:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.47.tgz}
     name: '@vue/shared'
     version: 3.2.47
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@wdio/config@8.8.4:
     resolution: {integrity: sha512-X3wTRzNyY42KXxJGeFByJd0qnbj/wvD+0vWkEiyXdAvglsl1ZLh9tOmxZxBDFbITnXm0KcrI01yS8IgtLf9MFQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wdio/config/-/config-8.8.4.tgz}

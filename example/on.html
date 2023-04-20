@@ -9,6 +9,7 @@
   <body>
     <button class="btn">点击 String</button>
     <button class="removeBtn">点击 Element</button>
+    <input type="text" placeholder="输入" />
     <script src="../dist/index.js"></script>
     <script>
       const cl1 = () => {
@@ -17,9 +18,11 @@
       v.on(".btn", "click", cl1);
 
       v.on(document.querySelector(".removeBtn"), "click", () => {
-		console.log("remove Event")
+        console.log("remove Event");
         v.off(".btn", "click", cl1);
       });
+
+      v.on;
     </script>
   </body>
 </html>
