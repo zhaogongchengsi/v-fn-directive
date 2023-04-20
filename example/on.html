@@ -7,22 +7,34 @@
     <title>Document</title>
   </head>
   <body>
-    <button class="btn">点击 String</button>
-    <button class="removeBtn">点击 Element</button>
-    <input type="text" placeholder="输入" />
-    <script src="../dist/index.js"></script>
+    <button class="on">on</button>
+    <button class="click">click</button>
+    <button class="dblclick">dblclick</button>
+    <button class="removeBtn">Stop</button>
+    <script src="../dist/index.global.js"></script>
     <script>
-      const cl1 = () => {
+      const stop = v.on(".on", "click", () => {
         console.log("click Btn!");
-      };
-      v.on(".btn", "click", cl1);
-
-      v.on(document.querySelector(".removeBtn"), "click", () => {
-        console.log("remove Event");
-        v.off(".btn", "click", cl1);
       });
 
-      v.on;
+      const stopclick = v.on.click(".click", (e) => {
+        console.log(e);
+      });
+
+      const stopdblclick = v.on.dblclick(".dblclick", (e) => {
+        console.log(e);
+      });
+
+      v.on(document.querySelector(".removeBtn"), "click", () => {
+        stop();
+        stopclick();
+        stopdblclick();
+      });
+
+      v.on.alt("f", (e) => {
+        console.log(e);
+      });
+    
     </script>
   </body>
 </html>
