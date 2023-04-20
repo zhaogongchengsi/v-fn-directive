@@ -5,6 +5,9 @@ export const isString = (t : any) => typeof t === "string";
 export const isObject = (t : any) => typeof t === "object" && t != null;
 export const isElement = (t : any) => isObject(t) && t instanceof Element
 export const isDocument = (t : any) => toStringCall(t) === '[object HTMLDocument]'
+export const isArray = (t : any) => Array.isArray(t)
+export const isHtmlElement = (t : any) => t instanceof HTMLElement;
+export const isNumber = (t:any) => typeof t === "number"
 
 export function querySelector(el : Oel | null): Element | Document | null {
 
@@ -23,6 +26,7 @@ export function querySelector(el : Oel | null): Element | Document | null {
     return null
 }
 
-export function warn (message?: any, ...optionalParams: any[]) {
-  console.warn(`[V] ${message}`, ...optionalParams)
+
+export function warn(message? : any, ...optionalParams : any[]) {
+    console.warn(`[V] ${message}`, ...optionalParams)
 }

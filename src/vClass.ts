@@ -1,1 +1,1 @@
-export default function vclass () {}
+export default function vclass() {}
